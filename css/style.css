@@ -182,10 +182,10 @@ h6,
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
   position: relative;
-  margin-right: 25px;
+  margin-right: 18px;
   padding: 45px 0;
   font-family: 'Jost', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--light) !important;
   outline: none;
@@ -474,6 +474,101 @@ h6,
     var(--secondary),
     var(--primary)
   );
+}
+
+/*** Portal Section ***/
+.portal-section {
+  background-color: #f8f9fa;
+}
+
+.portal-tabs {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.portal-tabs .nav-link {
+  padding: 10px 24px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark);
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.portal-tabs .nav-link:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.portal-tabs .nav-link.active {
+  color: #ffffff;
+  border-color: transparent;
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+.portal-screenshot {
+  max-height: 500px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Dashboard no portal: carrossel com parte 1 e parte 2 */
+.portal-dashboard-carousel {
+  max-width: 100%;
+}
+
+.portal-dashboard-carousel .carousel-inner {
+  background: #0d0d0d;
+}
+
+.portal-dashboard-carousel-img {
+  max-height: min(560px, 85vh);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.portal-dashboard-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.portal-dashboard-indicators .active {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+.portal-dashboard-carousel .carousel-control-prev,
+.portal-dashboard-carousel .carousel-control-next {
+  width: 12%;
+  opacity: 0.85;
+}
+
+.portal-dashboard-carousel .carousel-control-prev-icon,
+.portal-dashboard-carousel .carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
+}
+
+/*** CTA Section ***/
+.cta-section {
+  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    linear-gradient(to bottom right, #1a1a1a, #0d3d29);
+  background-position: left 0px top 0px, right 0px bottom 50%;
+  background-repeat: no-repeat;
 }
 
 /*** Footer ***/
